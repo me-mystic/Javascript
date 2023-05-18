@@ -82,3 +82,11 @@ search.addEventListener('input', function() {
 document.querySelector('.cross').addEventListener('click', function() {
     document.querySelector('#searchInp').value =" ";
 })
+
+/* 
+Additional features:: 
+1. Add title
+2. mark a note as important
+3. Separate notes by users
+4. sync and host to web server
+*/
