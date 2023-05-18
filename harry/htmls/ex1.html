@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 100px;
+            background-color: black;
+            color: green;
+        }
+        p {
+            font-size: 30px;
+            font-family: calibri;
+        }
+        .links {
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .links:link {
+            color: green;
+        }
+        .links:visited {
+            color: white;
+        }
+        a {
+            padding: 5px;
+            text-decoration: none;
+        }
+        a:link {
+            color: green;
+        }
+        a:visited {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>HTML</p>
+    <a class="links" href="//www.w3schools.com/html/default.asp"> HTML HOME </a>
+    <a class="links" href="//www.w3schools.com/html/html_intro.asp"> HTML Introduction </a>
+    <a class="links" href="//www.w3schools.com/html/html_editors.asp"> HTML Editors </a>
+    <a class="links" href="//www.w3schools.com/html/html_basic.asp"> HTML Basic </a>
+    <p>CSS</p>
+    <a class="links" href="https://www.w3schools.com/css/default.asp"> CSS HOME </a>
+    <a class="links" href="https://www.w3schools.com/css/css_intro.asp"> CSS Introduction </a>
+    <a class="links" href="https://www.w3schools.com/css/css_syntax.asp"> CSS Syntax </a>
+    <a class="links" href="https://www.w3schools.com/css/css_selectors.asp"> CSS Selectors </a>
+    <div>
+        <p>What are you searching for?</p>
+        <input type="text" id="ans">
+        <button type="submit" onclick="">Submit</button>
+        <div class="add"></div>
+    </div>
+</body>
+<script>
+    let btn = document.querySelector('button');
+    btn.addEventListener('click', print);
+    function print() {
+        document.querySelector('.add').innerHTML = "";
+    let str = document.getElementById('ans').value;
+    let links = document.links;
+    let links_arr = Array.from(links);
+    let show = document.createElement('p');
+    show.innerHTML = "Results:";
+    document.querySelector('.add').appendChild(show);
+    links_arr.forEach(function(e) {
+        if(e.href.includes(str)) {
+            let p = document.createElement('a');
+            p.href = e.href;
+            p.innerHTML = e.innerHTML;
+            let li = document.createElement('li');
+            li.appendChild(p);
+            document.querySelector('.add').appendChild(li);
+        };
+    })
+}
+</script>
+</html>

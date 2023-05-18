@@ -1,0 +1,216 @@
+body {
+    font-family: monospace;
+    margin: 0px;
+    background-color: rgb(28, 28, 28);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+body::before {
+    content: " ";
+    background:url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bebc46ce-2db2-4624-95e1-68bc03a6edaf/ddpyxaj-25ab31f5-82b8-4556-a25e-77080f5ab1b6.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JlYmM0NmNlLTJkYjItNDYyNC05NWUxLTY4YmMwM2E2ZWRhZlwvZGRweXhhai0yNWFiMzFmNS04MmI4LTQ1NTYtYTI1ZS03NzA4MGY1YWIxYjYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.nbY84ZVgNqIv4FdGSe_cn1YP9DY9MWpojivq5cchmn8");
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    position: absolute;
+}
+#navbar::before {
+    content: "";
+    background-color: black;
+    z-index: -1;
+    width:100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+}
+#navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Dancing Script', cursive;;
+    font-size: 2rem;
+    justify-content: space-between;
+}
+
+.background {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.container {
+    margin-top: 3%;
+    width: 60%;
+    justify-content: center;
+}
+.notes-container {
+    margin: 2% 0;
+    width: 70%;
+    justify-content: center;
+}
+svg {
+    width: 20px;
+}
+
+#logo {
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+.text::before {
+    content: " ";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    position: absolute;
+    border-radius: 20px;
+}
+.text {
+    position: relative;
+}
+
+textarea {
+    height: 40vh;
+}
+input,
+textarea {
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    background: none;
+    padding: 30px 10px;
+}
+
+#search {
+    position: relative;
+    border: 1px rgb(255, 255, 255) solid;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 1px 6px;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+.cross {
+    width: 30px;
+}
+#add {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    box-sizing: border-box;
+}
+
+#add h1 {
+    margin-left: 1%;
+    font-size: 2rem;
+}
+#add p {
+    text-shadow: 1px 1px 2px white;
+    font-weight: 600;
+    margin-left: 1%;
+    font-size: 1rem;
+}
+#desc {
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#notes {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* text-align: center; */
+}
+#nothing{
+    margin-left: 10%;
+    color: black;
+    font-size: 20px;
+}
+.btn {
+    margin-top: 10px;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border:none
+}
+.btn:hover {
+    background-color: rgb(255, 253, 253);
+    color: black;
+    border:none;
+    transform: translate(-0.5px, -0.5px);
+    box-shadow: 0.7px 0.7px rgb(218, 217, 217), inset -0.7px -0.7px 2px rgb(218, 217, 217);
+}
+.note {
+    padding: 20px 30px 40px 30px;
+    box-sizing: border-box;
+    margin:1% 2%;
+    background-color: rgb(245, 243, 205);
+    width: 29%;
+    color: black;
+    border-radius: 30px;
+}
+
+.note:hover {
+    background-color: rgb(255, 253, 253);
+    color: black;
+    border:none;
+    transform: translate(-0.75px, -0.75px);
+    box-shadow: 0.7px 0.7px rgb(218, 217, 217), inset -0.7px -0.7px 4px rgb(161, 159, 159);
+}
+.delBtn {
+    border: rgb(0, 0, 0) 1px solid;
+    background-color: rgb(255, 253, 253);
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.delBtn:hover {
+    background-color: rgba(171, 5, 5);
+    color: white;
+    border:none;
+    transform: translate(-0.5px, -0.5px);
+    box-shadow: 0.7px 0.7px rgb(120, 3, 3), inset -0.7px -0.7px 2px rgb(120, 3, 3);
+}
+footer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgb(6, 6, 6);
+    opacity: 0.8;
+}
+footer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: white;
+    margin-top: 5%;
+}
+.icons svg {
+    width:35px;
+    padding:10px;
+}
+.icons a {
+    text-decoration: none;
+}
