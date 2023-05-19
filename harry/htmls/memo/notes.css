@@ -7,15 +7,17 @@ body {
     flex-direction: column;
     align-items: center;
     color: white;
+    background-color: rgb(243, 243, 204);
 }
 
 body::before {
     content: " ";
-    background:url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bebc46ce-2db2-4624-95e1-68bc03a6edaf/ddpyxaj-25ab31f5-82b8-4556-a25e-77080f5ab1b6.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JlYmM0NmNlLTJkYjItNDYyNC05NWUxLTY4YmMwM2E2ZWRhZlwvZGRweXhhai0yNWFiMzFmNS04MmI4LTQ1NTYtYTI1ZS03NzA4MGY1YWIxYjYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.nbY84ZVgNqIv4FdGSe_cn1YP9DY9MWpojivq5cchmn8");
+    background:url("https://media.tenor.com/NYX9HFSkE5AAAAAi/workshop-diveinn.gif") no-repeat center;
+    background-size: contain;
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.7;
+    opacity: 0.6;
     position: absolute;
 }
 #navbar::before {
@@ -46,7 +48,7 @@ body::before {
     position: relative;
 }
 .container {
-    margin-top: 3%;
+    margin-top: 5%;
     width: 60%;
     justify-content: center;
 }
@@ -78,7 +80,23 @@ svg {
 .text {
     position: relative;
 }
-
+.title::before {
+    content: " ";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    position: absolute;
+    border-radius: 20px;
+}
+.title {
+    position: relative;
+    margin-bottom: 1%;
+}
+.title input {
+    padding-left: 3%;
+}
 textarea {
     height: 40vh;
 }
@@ -89,6 +107,7 @@ textarea {
     border: none;
     border-radius: 10px;
     width: 100%;
+    font-size: 18px;
     background: none;
     padding: 30px 10px;
 }
@@ -123,7 +142,7 @@ textarea {
     text-shadow: 1px 1px 2px white;
     font-weight: 600;
     margin-left: 1%;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 #desc {
     padding: 30px;
