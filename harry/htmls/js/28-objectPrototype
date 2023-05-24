@@ -1,0 +1,49 @@
+// obj inherits from Object.prototype 
+
+let obj = {
+    name:'shruuu',
+    roll : 279
+}
+/*
+     obj
+     {name: 'shruuu', roll: 279}
+     name: "shruuu"
+     roll: 279
+     [[Prototype]]: Object
+     constructor: ƒ Object()
+     hasOwnProperty::  ƒ hasOwnProperty()
+     isPrototypeOf:  ƒ isPrototypeOf()
+     propertyIsEnumerable:  ƒ propertyIsEnumerable()
+     toLocaleString:  ƒ toLocaleString()
+     toString:  ƒ toString()
+     valueOf:  ƒ valueOf()
+     __defineGetter__:  ƒ __defineGetter__()
+     __defineSetter__:  ƒ __defineSetter__()
+     __lookupGetter__:  ƒ __lookupGetter__()
+     __lookupSetter__:  ƒ __lookupSetter__()
+     __proto__:  (...)
+     get __proto__:  ƒ __proto__()
+     set __proto__:  ƒ __proto__() 
+*/
+
+
+function Obj(name, roll) {
+    this.name = name;
+    this.roll = roll;
+}
+/* Obj {name: 'ewf', roll: 453}name: "vysh"roll: 453[[Prototype]]: ObjectgetName: ƒ ()setName: ƒ (name)constructor: ƒ Obj(name, roll)[[Prototype]]: Object */
+
+// --------never do this----------
+/* Object.prototype.getNme = () => console.log('fdfs') */
+ 
+// changing prototype::
+Obj.prototype.getName = function() {
+    console.log(this.name);
+}
+Obj.prototype.setName = function(name) {
+    this.name = name;
+}
+
+// made using constructor..so inherits from it's constructor's prototype
+let obj1 = new Obj('ewf',453);  
+console.log(obj1)
