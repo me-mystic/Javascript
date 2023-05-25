@@ -2,7 +2,7 @@
 
 // object literal
 let car = {
-    name : "maruti 650",
+    name : ['bjk', 'hbjn'],
     topSpeed : 180,
     run : function() {
         console.log(`${car.name} is running`)
