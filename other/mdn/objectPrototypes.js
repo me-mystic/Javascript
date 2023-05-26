@@ -82,5 +82,14 @@ class Shape {
         this.sides = s;
         this.sideLength = sl;
     }
+
+    calcPerimeter() {
+        console.log(`peri of ${this.name} : ${this.sides * this.sideLength}`)
+    }
   }
+
+  const sq = new Shape('sq', 4, 5);
+  const tri = new Shape('tri', 3, 3);
+  console.log(sq.calcPerimeter());
+  console.log(tri.calcPerimeter());
       
