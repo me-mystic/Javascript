@@ -70,3 +70,17 @@ console.log(p2.hasOwnProperty('name')); //true
 console.log(p2.hasOwnProperty('bio')); //false          
 console.log(Object.hasOwn(Person,  'name')); //true
 console.log(Object.hasOwn(Person,  'bio')); //false
+
+class Shape {
+
+    name;
+    sides;
+    sideLength;
+    
+    constructor(n, s, sl) {
+        this.name = n;
+        this.sides = s;
+        this.sideLength = sl;
+    }
+  }
+      
