@@ -1,0 +1,28 @@
+// Custom components
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import logo from './React-icon.svg';
+
+//css
+import './index.css';
+function TemporaryComponent() {
+  return (
+    <>
+      <img src={logo} width="50px" alt=""></img>
+      <h1>Fun facts about React</h1>
+      <ul>
+        <li>Was first released in 2013</li>
+        <li>Wasjkm</li>
+        <li>Was..</li>
+        <li>Was..</li>
+        <li>Was..</li>
+      </ul>
+    </>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  // TemporaryComponent() --> both work the same way
+  <TemporaryComponent/>
+);

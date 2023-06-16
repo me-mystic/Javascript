@@ -1,0 +1,27 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+// import ReactDOM from 'react-dom/client';
+
+// const navbar = (
+//   <div>
+//     <h1>this is a navbar</h1>
+//   </div>
+// )
+
+const page = (
+  <div>
+    <p>a day in my life</p>
+    <ul>
+      <li>draw</li>
+      <li>code</li>
+      <li>cook</li>
+      <li>make love</li>
+      <li>explore</li>
+    </ul>
+  </div>
+)
+// document.getElementById('root').append(JSON.stringify(page)); --> only displays an obj in the browser
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  page
+)

@@ -12,10 +12,8 @@ Render your list to the page
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// logo
-import logo from './React-icon.svg';
 // css
-import './index.css';
+import './index.css'
 function List() {
   return (
     <>
@@ -23,21 +21,15 @@ function List() {
         <li>he</li>
         <li>lo</li>
       </ul>
-      <footer>
-        <small>&copy; 2023 Shrutzz Development. All rights reserved.</small>
-      </footer>
     </>
   );
 }
 
 function Head() {
   return (
-    <header>
-      <nav>
+    <>
       <h1> Just a head</h1>
-      <img src={logo} alt=''/>
-      </nav>
-    </header>
+    </>
   );
 }
 
