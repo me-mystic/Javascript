@@ -1,0 +1,69 @@
+/**
+Challenge: 
+
+- Add an `ul` inside the Header's `nav` and create
+  the following `li`s: "Pricing", "About", & "Contact"
+- Using flexbox, line up the nav items horizontally, and
+  put them inline with the React logo.
+*/
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+import logo from './React-icon.svg';
+
+// css
+import './index.css';
+
+function Header() {
+  return (
+    <>
+      <nav className='navBar'>
+        <div className='left'>
+        <img src={logo} alt='' />
+        <p>Taisho ichiban pro ltd.</p>
+        </div>
+        <ul className='nav-list'>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className='footer'>
+      <small> &copy; Taisho ichiban pro. All rights reserved.</small>
+    </footer>
+  );
+}
+
+function MainContent() {
+  return (
+    <div className='main'>
+      <h2>What we offer Animators?</h2>
+      <ul>
+        <li>Personalized Studio</li>
+        <li>All art supplies</li>
+        <li>High quality Canteen..? maybe :p</li>
+      </ul>
+    </div>
+  )
+}
+function Page() {
+  return (
+    <>
+      <Header />
+      <MainContent/>
+      <Footer/>
+    </>
+  )
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <Page />
+)

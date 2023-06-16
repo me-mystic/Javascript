@@ -1,7 +1,40 @@
 body {
-    padding: 40px 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
 }
 img {
     width: 40px;
+}
+.navBar {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    /* background-color: rgb(6, 6, 83); */
+    box-shadow: -10px 5px 20px #9999;
+    /* color: white; */
+    padding: 20px;
+}
+.left {
+    display: flex;
+}
+.left > img {
+    padding-right: 20px;
+}
+.nav-list > li {
+    padding-right: 10px;
+}
+.main {
+    margin: 20px;
+}
+.footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(113, 113, 112);
+    width: 100%;
+    padding: 20px;
+    color: white;
 }

@@ -1,50 +1,22 @@
-/**
-Challenge: 
-
-Part 1: Create a page of your own using a custom Page component
-
-It should return an ordered list with the reasons why you're
-excited to be learning React :)
-
-Render your list to the page
-
- */
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// logo
-import logo from './React-icon.svg';
+
 // css
 import './index.css';
-function List() {
+// pages
+import Header from './Header'
+import MainContent from './MainContent'
+import Footer from './Footer';
+function Page() {
   return (
     <>
-      <ul>
-        <li>he</li>
-        <li>lo</li>
-      </ul>
-      <footer>
-        <small>&copy; 2023 Shrutzz Development. All rights reserved.</small>
-      </footer>
+      <Header />
+      <MainContent/>
+      <Footer/>
     </>
-  );
+  )
 }
-
-function Head() {
-  return (
-    <header>
-      <nav>
-      <h1> Just a head</h1>
-      <img src={logo} alt=''/>
-      </nav>
-    </header>
-  );
-}
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>
-    <Head />
-    <List />
-  </>
+  <Page />
 )
