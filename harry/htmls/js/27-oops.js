@@ -25,6 +25,6 @@ function carConstructor(name, speed) {
     }
 }
 
-let car1 = new car.constructor('wfc', 78);
+// let car1 = new car.constructor('wfc', 78);
 let car2 = new carConstructor('thdw', 158);
 console.log(car1.analyze(), car2.analyze());

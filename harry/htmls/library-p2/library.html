@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="booksTable.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -19,18 +21,100 @@
             width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 488.4 488.4" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" 
               stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M0,203.25c0,112.1,91.2,203.2,203.2,203.2c51.6,0,98.8-19.4,134.7-51.2l129.5,129.5c2.4,2.4,5.5,3.6,8.7,3.6 s6.3-1.2,8.7-3.6c4.8-4.8,4.8-12.5,0-17.3l-129.6-129.5c31.8-35.9,51.2-83,51.2-134.7c0-112.1-91.2-203.2-203.2-203.2 S0,91.15,0,203.25z M381.9,203.25c0,98.5-80.2,178.7-178.7,178.7s-178.7-80.2-178.7-178.7s80.2-178.7,178.7-178.7 S381.9,104.65,381.9,203.25z"></path> </g> </g> </g>
                 </svg>
-                <input class="navElem" placeholder="type the name of the book.." type="text" type the name of the book>
+                <input class="navElem searchInp" placeholder="type the name of the book.." type="text" type the name of the book>
             </div>
         </nav>
-        <div class="container" style="top:50px">
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate culpa fugit qui ratione totam fuga nesciunt ut odit tempore, enim voluptatem molestias possimus natus sequi nisi eos repudiandae sint odio.</h1>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate culpa fugit qui ratione totam fuga nesciunt ut odit tempore, enim voluptatem molestias possimus natus sequi nisi eos repudiandae sint odio.</h1>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate culpa fugit qui ratione totam fuga nesciunt ut odit tempore, enim voluptatem molestias possimus natus sequi nisi eos repudiandae sint odio.</h1>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate culpa fugit qui ratione totam fuga nesciunt ut odit tempore, enim voluptatem molestias possimus natus sequi nisi eos repudiandae sint odio.</h1>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate culpa fugit qui ratione totam fuga nesciunt ut odit tempore, enim voluptatem molestias possimus natus sequi nisi eos repudiandae sint odio.</h1>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate culpa fugit qui ratione totam fuga nesciunt ut odit tempore, enim voluptatem molestias possimus natus sequi nisi eos repudiandae sint odio.</h1>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate culpa fugit qui ratione totam fuga nesciunt ut odit tempore, enim voluptatem molestias possimus natus sequi nisi eos repudiandae sint odio.</h1>
-        </div>
+     </div>   
+
+        <div class="container" >
+
+            <h1>The Liborary</h1>
+            <hr>
+
+            <form action="">
+                <table class="infoTable">
+                    <tr>
+                        <td>
+                            <label class="infoleft" for="">Book</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Book...">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                             
+                            <label class="infoleft" for="">Author</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Author...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="top-align">
+                            <label class="infoleft" for="">Genre</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="genre" value="fiction" id="fiction">
+                            <label for="fiction">fiction</label>
+                            <br>
+                            <input type="radio" name="genre" value="horror" id="horror">
+                            <label for="horror">horror</label>
+                            <br>
+                            <input type="radio" name="genre" value="thriller" id="thriller">
+                            <label  for="thriller">thriller</label>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="infoleft" for="">Checkbox</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="" id="ch1">
+                            <label for="ch1">Example</label>
+                        </td>
+                    </tr>
+                </table>
+               <button class="addBtn">Add Book</button>
+            </form>
+
+            <div class="booksInfo">
+                <table class="books">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Author</th>
+                        <th>Type</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>kjdcn</td>
+                        <td>3hjd</td>
+                        <td>jbjn</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>kjdcn</td>
+                        <td>3hjd</td>
+                        <td>jbjn</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>kjdcn</td>
+                        <td>3hjd</td>
+                        <td>jbjn</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>kjdcn</td>
+                        <td>3hjd</td>
+                        <td>jbjn</td>
+                    </tr>
+                    
+                </table> 
+            </div>
         </div>
 </body>
 </html>

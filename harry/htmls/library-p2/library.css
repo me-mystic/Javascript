@@ -38,7 +38,7 @@ body {
     border-radius: 30px;
     padding: 10px;
 }
-input {
+.searchInp {
     padding: 4px 10px;
     background-color: black;
     color: white;
@@ -47,4 +47,8 @@ input {
 }
 .container {
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
 }

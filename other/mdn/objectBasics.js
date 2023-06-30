@@ -17,6 +17,8 @@ logProperty("age");
 // -------2.
 /*not just sets but creates new ones*/   
 person["eyes"] = "hazel";
+person.lips = "pink"
+console.log(person)
 person.farewell = function () {
     console.log("Bye everybody!");
 };
