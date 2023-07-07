@@ -1,0 +1,19 @@
+#alert {
+    width: 100%;
+    text-align: center;
+}
+.alertBox {
+    padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.alertBox bold {
+    font-weight: 600;
+}
+.Warning {
+    background-color: rgb(214, 161, 161);
+    color: rgb(84, 10, 10);   
+}
+.Success {
+    background-color: rgb(161, 214, 196);
+    color: rgb(10, 84, 60);
+}

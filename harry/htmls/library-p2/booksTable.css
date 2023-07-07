@@ -1,17 +1,17 @@
 .booksInfo {
     width: 60%;
 }
-.books{
+#books{
     margin-top: 30px;
     width: 100%;
     border-collapse: collapse;
 } 
-.books th, .books td {
+#books th, #books td {
     text-align: left;
     padding: 10px 30px;
 }
 
-.books tr:nth-child(even) 
+#books tr:nth-child(even) 
   {
   background-color: #f2f2f2;
 }
