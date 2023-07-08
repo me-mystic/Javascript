@@ -8,14 +8,15 @@ const students = [
 
 function enrollStudent(student, callback) {
     setTimeout(() => {
+        console.log("enrolled student")
         students.push(student);
         callback();
     }, 3000);
 }
 
 function getStudents() {
-    console.log("getting students");
     setTimeout(() => {
+        console.log("getting students");
         let UIString ="";
         students.forEach((e) => {
             UIString += e.name + " : " + e.lang + "<br>";
