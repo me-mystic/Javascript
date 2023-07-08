@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align: right">
+
+<h1>JavaScript Functions</h1>
+<h2>Callback Functions</h2>
+<p id="demo"></p>
+
+<script>
+// Create an Array
+const myNumbers = [4, 1, -20, -7, 5, 9, -6];
+
+// Call removeNeg with a Callback
+const posNumbers = removeNeg(myNumbers);
+
+// Display Result
+document.getElementById("demo").innerHTML = posNumbers;
+
+// Remove negative numbers
+function removeNeg(myNums) {
+	const myArr = "";
+    myNums.forEach((e) => {
+        console.log("nums")
+    alert('v');
+        myArr += e + "<br>";
+    })
+    return myArr;
+}
+</script>
+
+</body>
+</html>
