@@ -1,0 +1,27 @@
+.container {
+    padding: 57px 26px;
+    background-color: #282D35;
+    color: white;
+    background-image: url('../imgs/reactjs-icon-large.png');
+    background-repeat: no-repeat;
+    background-position: right 70%;
+}
+
+h1 {
+    font-weight: 700;
+    margin: 0;
+    font-size: 41px;
+    letter-spacing: -1.953px;
+}
+.main__facts {
+    /* margin-top: 47px; */
+    max-width: 400px;
+}
+.main__facts>li {
+    font-weight: 400;
+    padding-block: 15px;
+}
+.main__facts>li::marker {
+    font-size: 2rem;
+    color: #61DAFB;
+}
