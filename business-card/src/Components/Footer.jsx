@@ -11,13 +11,13 @@ import footCss from '../assets/css/footer.module.css';
 export default function Footer() {
     return (
         <footer>
-            <a href="https://www.instagram.com/shrutzztz/">
+            <a rel="noreferrer" href="https://www.instagram.com/shrutzztz/" target="_blank">
                 <img src={insta} alt="" />
             </a>
-            <a href="https://www.linkedin.com/in/shruti-kolla-514637204/">
+            <a rel="noreferrer" href="https://www.linkedin.com/in/shruti-kolla-514637204/"  target="_blank">
                 <img src={linkIn} alt="" />
             </a>
-            <a href="https://github.com/me-mystic">
+            <a rel="noreferrer" href="https://github.com/me-mystic" target="_blank">
                 <img src={git} alt="" />
             </a>
         </footer>

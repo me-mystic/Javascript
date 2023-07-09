@@ -15,7 +15,10 @@ footer a{
     padding: 0 30px;
     width: 45px;
 }
-
+footer a:hover {
+    transform: translate(0px, -2px);
+    text-shadow: 2px 2px white;
+}
 @media(max-width:500px) {
     footer a {
         width: 25px;
