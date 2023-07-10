@@ -7,9 +7,9 @@ export default function App() {
 
   return (
     <div>
-    <Nav/>
-    <Main/>
-    <Card/>
+      <Nav />
+      <Main />
+      <Card />
     </div>
   );
 }
