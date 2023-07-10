@@ -1,13 +1,15 @@
 import React from 'react'
 
-import Bar from './bar.jsx'
+import Nav from './Components/nav.jsx'
+import Main from './Components/mainC.jsx'
+import Card from './Components/card.jsx'
 export default function App() {
 
   return (
     <div>
-    <h1>bhjn</h1>
-    <Bar/>
-    
+    <Nav/>
+    <Main/>
+    <Card/>
     </div>
   );
 }

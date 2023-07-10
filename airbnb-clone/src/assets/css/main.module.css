@@ -1,0 +1,23 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+}
+
+.main__photo {
+    max-width: 396px;
+    align-self: center;
+}
+.main__head {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 110%;
+    margin-bottom: 16px;
+}
+.main__para {
+    margin-top: 0;
+    color: #222;
+    font-size: 16px;
+    line-height: 110%;
+    max-width: 320px;
+}
