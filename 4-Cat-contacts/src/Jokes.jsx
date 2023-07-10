@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Jokes(props) {
-    console.log(props.comments[0], props.comments[1]);
+    // console.log(props.comments[0], props.comments[1]);
     return(
         <div>
             {/* {props.setup && 

@@ -8,22 +8,23 @@ import img3 from '../assets/imgs/card/img3.svg';
 
 // css
 import cardCss from '../assets/css/card.module.css';
-export default function bar() {
+export default function Card(props) {
+    
     return (
         <card>
-            <img className={cardCss.card__img} src={img1} alt="" />
+            <img className={cardCss.card__img} src={`src/assets/imgs/card/${props.img}`} alt="" />
             <div className={cardCss.card__stats}>
                 <img className={cardCss.star} src={star} alt="" />
-                <span className={cardCss.rating}>5.0
+                <span className={cardCss.rating}>{props.rating}
                 </span>
-                <span className={cardCss.gray}>(6) • </span>
-                <span className={cardCss.gray}>USA</span>
+                <span className={cardCss.gray}>({props.count}) • </span>
+                <span className={cardCss.gray}>{props.location}</span>
             </div>
             <p className={cardCss.card__title}>
-                Life lessons with Katie Zaferes
+                {props.title}
             </p>
             <p className={cardCss.card__pricing}>
-            <span className={cardCss.bold}>From $136</span> / person
+            <span className={cardCss.bold}>From ${props.pricing}</span> / person
             </p>
         </card>
     );
