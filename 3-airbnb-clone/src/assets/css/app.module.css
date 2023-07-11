@@ -1,0 +1,10 @@
+section {
+    padding: 37px;
+}
+
+.cards__list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}

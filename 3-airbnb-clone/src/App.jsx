@@ -1,33 +1,40 @@
 import React from 'react'
 
+// components
 import Nav from './Components/nav.jsx'
 import Main from './Components/mainC.jsx'
 import Card from './Components/card.jsx'
+
+// css
+import appCss from './assets/css/app.module.css'
+// data
+import { cardInfo } from './Components/cardDb.js';
+
 export default function App() {
-  const color = ["red", "green", "blue", "orange"];
+
+  const cards = cardInfo.map((x) => {
+    return (
+      <Card key= {x.id}
+            item = {x} 
+        // img={x.coverImg}
+        // desc={x.description}
+        // location={x.location}
+        // openSpots={x.openSpots}
+        // price={x.price}
+        // rating={x.stats.rating}
+        // count={x.stats.reviewCount}
+        // title={x.title}
+      />
+    )
+  })
+
   return (
     <div>
-      {color.map(color => {
-          return <h1>{color}</h1>
-      })}
       <Nav />
       <Main />
-      <Card
-        img="img1.svg"
-        rating={5.0}
-        count={6}
-        location="USA"
-        title="Life lessons with Katie Zaferes"
-        pricing={136}
-      />
-      <Card
-        img="img2.svg"
-        rating={5.0}
-        count={30}
-        location="USA"
-        title="Learn wedding photography"
-        pricing={125}
-      />
+      <section className={appCss.cards__list}>
+        {cards}
+      </section>
     </div>
   );
 }
