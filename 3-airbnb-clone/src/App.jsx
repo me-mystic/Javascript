@@ -15,15 +15,8 @@ export default function App() {
   const cards = cardInfo.map((x) => {
     return (
       <Card key= {x.id}
-            item = {x} 
-        // img={x.coverImg}
-        // desc={x.description}
-        // location={x.location}
-        // openSpots={x.openSpots}
-        // price={x.price}
-        // rating={x.stats.rating}
-        // count={x.stats.reviewCount}
-        // title={x.title}
+            // item = {x}
+            {...x} 
       />
     )
   })

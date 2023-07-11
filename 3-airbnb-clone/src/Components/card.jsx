@@ -9,31 +9,28 @@ import img3 from '../assets/imgs/card/img3.svg';
 // css
 import cardCss from '../assets/css/card.module.css';
 export default function Card(props) {
-    const {item} = props;
-    const {stats} = item;
-    console.log(items)
     let badgeText;
-    if(!item.openSpots) {
+    if(!props.openSpots) {
         badgeText = "SOLD OUT"
-    } else if(item.location === "Online") {
+    } else if(props.location === "Online") {
         badgeText = "ONLINE"
     }
     return (
         <card>
             {badgeText && <div className={cardCss.soldBadge}>{badgeText}</div>}
-            <img className={cardCss.card__img} src={`src/assets/imgs/card/${item.coverImg}`} alt="" />
+            <img className={cardCss.card__img} src={`src/assets/imgs/card/${props.coverImg}`} alt="" />
             <div className={cardCss.card__stats}>
                 <img className={cardCss.star} src={star} alt="" />
-                <span className={cardCss.rating}>{stats.rating}
+                <span className={cardCss.rating}>{props.stats.rating}
                 </span>
-                <span className={cardCss.gray}>({stats.reviewCount}) • </span>
-                <span className={cardCss.gray}>{item.location}</span>
+                <span className={cardCss.gray}>({props.stats.reviewCount}) • </span>
+                <span className={cardCss.gray}>{props.location}</span>
             </div>
             <p className={cardCss.card__title}>
-                {item.title}
+                {props.title}
             </p>
             <p className={cardCss.card__pricing}>
-            <span className={cardCss.bold}>From ${item.price}</span> / person
+            <span className={cardCss.bold}>From ${props.price}</span> / person
             </p>
         </card>
     );
